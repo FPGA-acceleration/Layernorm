@@ -1,0 +1,2 @@
+bf_add.v,verilog,xil_defaultlib,../../../../RMSnorm.gen/sources_1/ip/bf_add/sim/bf_add.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

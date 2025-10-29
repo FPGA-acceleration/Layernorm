@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed Oct 29 15:03:49 2025
+| Host         : Hua running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010iclg225-1L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_point_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of floating_point_2 (xilinx.com:ip:floating_point:7.1 (Rev. 19)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed Oct 29 15:03:47 2025
+| Host         : Hua running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010iclg225-1L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'floating_point_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of floating_point_1 (xilinx.com:ip:floating_point:7.1 (Rev. 19)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed Oct 29 15:03:45 2025
+| Host         : Hua running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010iclg225-1L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bf_sub'
+
+1. Summary
+----------
+
+SUCCESS in the update of bf_sub (xilinx.com:ip:floating_point:7.1 (Rev. 19)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed Oct 29 15:03:44 2025
+| Host         : Hua running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010iclg225-1L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bf_mul'
+
+1. Summary
+----------
+
+SUCCESS in the update of bf_mul (xilinx.com:ip:floating_point:7.1 (Rev. 19)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed Oct 29 15:03:42 2025
+| Host         : Hua running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010iclg225-1L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bf_add'
+
+1. Summary
+----------
+
+SUCCESS in the update of bf_add (xilinx.com:ip:floating_point:7.1 (Rev. 19)) to current project options.
+

@@ -1,0 +1,2 @@
+bf_sub.v,verilog,xil_defaultlib,../../../../MinimumSystem.gen/sources_1/ip/bf_sub/sim/bf_sub.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

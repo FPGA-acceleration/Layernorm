@@ -1,0 +1,4 @@
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_14,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+c_reg_fd_v12_0_vh_rfs.vhd,vhdl,c_reg_fd_v12_0_10,../../../ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd,
+c_shift_ram_v12_0_vh_rfs.vhd,vhdl,c_shift_ram_v12_0_18,../../../ipstatic/hdl/c_shift_ram_v12_0_vh_rfs.vhd,
+align_mul.vhd,vhdl,xil_defaultlib,../../../../Laynernorm.gen/sources_1/ip/align_mul/sim/align_mul.vhd,

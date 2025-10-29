@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="bf_add_synth_1" LaunchPart="xc7z010iclg225-1L" LaunchTime="1761721470">
+  <File Type="VDS-TIMING-PB" Name="bf_add_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bf_add_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="bf_add.vds"/>
+  <File Type="REPORTS-TCL" Name="bf_add_reports.tcl"/>
+  <File Type="PA-TCL" Name="bf_add.tcl"/>
+  <File Type="RDS-DCP" Name="bf_add.dcp"/>
+  <File Type="RDS-PROPCONSTRS" Name="bf_add_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="bf_add_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="bf_add_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bf_add" RelGenDir="$PGENDIR/bf_add">
+    <File Path="$PSRCDIR/sources_1/ip/bf_add/bf_add.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="bf_add"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bf_add" RelGenDir="$PGENDIR/bf_add">
+    <File Path="$PSRCDIR/sources_1/ip/bf_add/bf_add.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="bf_add"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

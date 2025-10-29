@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:55
+/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/align_mul/sim/align_mul.vhd,1761726317,vhdl,,,,align_mul,,,,,,,,
+/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sim_1/new/process_mean_tb.v,1761726515,verilog,,,,process_mean_tb,,,,,,,,
+/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/align_fifo.v,1761725658,verilog,,/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v,,mean_fifo,,,,,,,,
+/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v,1761726386,verilog,,/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sim_1/new/process_mean_tb.v,,process_mean_top,,,,,,,,
+/home/alhua/VivadoProject/Laynernorm/MinimumSystem.gen/sources_1/ip/bf_mul/sim/bf_mul.v,1761721469,verilog,,/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/align_fifo.v,,bf_mul,,,,,,,,
+/home/alhua/VivadoProject/Laynernorm/MinimumSystem.gen/sources_1/ip/bf_sub/sim/bf_sub.v,1761721469,verilog,,/home/alhua/VivadoProject/Laynernorm/MinimumSystem.gen/sources_1/ip/bf_mul/sim/bf_mul.v,,bf_sub,,,,,,,,

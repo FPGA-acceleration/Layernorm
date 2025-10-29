@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../MinimumSystem.gen/sources_1/ip/bf_mul/sim/bf_mul.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

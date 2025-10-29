@@ -1,0 +1,1 @@
+align_mul.vhd,vhdl,xil_defaultlib,../../../../Laynernorm.gen/sources_1/ip/align_mul/sim/align_mul.vhd,
