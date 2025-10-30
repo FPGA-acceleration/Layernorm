@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Thu Oct 30 19:49:37 2025
+//Date        : Thu Oct 30 20:40:46 2025
 //Host        : Hua running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target Layernorm_wrapper.bd
 //Design      : Layernorm_wrapper

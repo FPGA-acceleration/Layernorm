@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 30 19:49:37 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 30 20:40:47 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010i" NAME="Layernorm" PACKAGE="clg225" SPEEDGRADE="-1L"/>
 
@@ -36,22 +36,22 @@
     </PORT>
     <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="process_mean_top_0" PORT="aclk"/>
         <CONNECTION INSTANCE="accumulator_0" PORT="aclk"/>
         <CONNECTION INSTANCE="cal_var_top_0" PORT="aclk"/>
         <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="aclk"/>
         <CONNECTION INSTANCE="rms_norm_top_0" PORT="aclk"/>
         <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="process_mean_top_0" PORT="aclk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_arstn">
       <CONNECTIONS>
         <CONNECTION INSTANCE="accumulator_0" PORT="arstn"/>
-        <CONNECTION INSTANCE="process_mean_top_0" PORT="arstn"/>
         <CONNECTION INSTANCE="cal_var_top_0" PORT="arstn"/>
         <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="aresetn"/>
         <CONNECTION INSTANCE="rms_norm_top_0" PORT="arstn"/>
         <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="arstn"/>
+        <CONNECTION INSTANCE="process_mean_top_0" PORT="arstn"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

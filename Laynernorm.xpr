@@ -58,19 +58,19 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="22"/>
+    <Option Name="WTXSimLaunchSim" Val="23"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="16"/>
-    <Option Name="WTModelSimExportSim" Val="16"/>
-    <Option Name="WTQuestaExportSim" Val="16"/>
+    <Option Name="WTXSimExportSim" Val="17"/>
+    <Option Name="WTModelSimExportSim" Val="17"/>
+    <Option Name="WTQuestaExportSim" Val="17"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="16"/>
-    <Option Name="WTRivieraExportSim" Val="16"/>
+    <Option Name="WTVcsExportSim" Val="17"/>
+    <Option Name="WTRivieraExportSim" Val="17"/>
     <Option Name="WTActivehdlExportSim" Val="0"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
@@ -250,9 +250,6 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Layernorm.bd" FileRelPathName="ip/Layernorm_cal_var_top_0_0/Layernorm_cal_var_top_0_0.xci">
           <Proxy FileSetName="Layernorm_cal_var_top_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Layernorm.bd" FileRelPathName="ip/Layernorm_process_mean_top_0_0/Layernorm_process_mean_top_0_0.xci">
-          <Proxy FileSetName="Layernorm_process_mean_top_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Layernorm.bd" FileRelPathName="ip/Layernorm_rms_norm_top_0_0/Layernorm_rms_norm_top_0_0.xci">
           <Proxy FileSetName="Layernorm_rms_norm_top_0_0"/>
@@ -464,12 +461,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Layernorm_process_mean_top_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Layernorm_process_mean_top_0_0" RelGenDir="$PGENDIR/Layernorm_process_mean_top_0_0">
-      <Config>
-        <Option Name="TopModule" Val="Layernorm_process_mean_top_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="Layernorm_cal_var_top_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Layernorm_cal_var_top_0_0" RelGenDir="$PGENDIR/Layernorm_cal_var_top_0_0">
       <Config>
         <Option Name="TopModule" Val="Layernorm_cal_var_top_0_0"/>
@@ -604,9 +595,7 @@
     </Run>
     <Run Id="axis_broadcaster_0_synth_1" Type="Ft3:Synth" SrcSet="axis_broadcaster_0" Part="xc7z010iclg225-1L" ConstrsSet="axis_broadcaster_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axis_broadcaster_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axis_broadcaster_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axis_broadcaster_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -616,21 +605,7 @@
     </Run>
     <Run Id="c_shift_ram_3_synth_1" Type="Ft3:Synth" SrcSet="c_shift_ram_3" Part="xc7z010iclg225-1L" ConstrsSet="c_shift_ram_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/c_shift_ram_3_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/c_shift_ram_3_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/c_shift_ram_3_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Layernorm_process_mean_top_0_0_synth_1" Type="Ft3:Synth" SrcSet="Layernorm_process_mean_top_0_0" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_process_mean_top_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Layernorm_process_mean_top_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_process_mean_top_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_process_mean_top_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -640,9 +615,7 @@
     </Run>
     <Run Id="Layernorm_cal_var_top_0_0_synth_1" Type="Ft3:Synth" SrcSet="Layernorm_cal_var_top_0_0" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_cal_var_top_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Layernorm_cal_var_top_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_cal_var_top_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_cal_var_top_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -652,9 +625,7 @@
     </Run>
     <Run Id="Layernorm_accumulator_0_0_synth_1" Type="Ft3:Synth" SrcSet="Layernorm_accumulator_0_0" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_accumulator_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Layernorm_accumulator_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_accumulator_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_accumulator_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -664,9 +635,7 @@
     </Run>
     <Run Id="Layernorm_axis_broadcaster_top_0_0_synth_1" Type="Ft3:Synth" SrcSet="Layernorm_axis_broadcaster_top_0_0" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_axis_broadcaster_top_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Layernorm_axis_broadcaster_top_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_axis_broadcaster_top_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_axis_broadcaster_top_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -676,9 +645,7 @@
     </Run>
     <Run Id="Layernorm_rms_norm_top_0_0_synth_1" Type="Ft3:Synth" SrcSet="Layernorm_rms_norm_top_0_0" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_rms_norm_top_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Layernorm_rms_norm_top_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_rms_norm_top_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_rms_norm_top_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -688,9 +655,7 @@
     </Run>
     <Run Id="Layernorm_rms_sum_nofifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="Layernorm_rms_sum_nofifo_0_0" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_rms_sum_nofifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Layernorm_rms_sum_nofifo_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_rms_sum_nofifo_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_rms_sum_nofifo_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -836,9 +801,7 @@
     </Run>
     <Run Id="axis_broadcaster_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="axis_broadcaster_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axis_broadcaster_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axis_broadcaster_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axis_broadcaster_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -855,28 +818,7 @@
     </Run>
     <Run Id="c_shift_ram_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="c_shift_ram_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="c_shift_ram_3_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/c_shift_ram_3_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/c_shift_ram_3_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Layernorm_process_mean_top_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_process_mean_top_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Layernorm_process_mean_top_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_process_mean_top_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_process_mean_top_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -893,9 +835,7 @@
     </Run>
     <Run Id="Layernorm_cal_var_top_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_cal_var_top_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Layernorm_cal_var_top_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_cal_var_top_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_cal_var_top_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -912,9 +852,7 @@
     </Run>
     <Run Id="Layernorm_accumulator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_accumulator_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Layernorm_accumulator_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_accumulator_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_accumulator_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -931,9 +869,7 @@
     </Run>
     <Run Id="Layernorm_axis_broadcaster_top_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_axis_broadcaster_top_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Layernorm_axis_broadcaster_top_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_axis_broadcaster_top_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_axis_broadcaster_top_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -950,9 +886,7 @@
     </Run>
     <Run Id="Layernorm_rms_norm_top_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_rms_norm_top_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Layernorm_rms_norm_top_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_rms_norm_top_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_rms_norm_top_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -969,9 +903,7 @@
     </Run>
     <Run Id="Layernorm_rms_sum_nofifo_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010iclg225-1L" ConstrsSet="Layernorm_rms_sum_nofifo_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Layernorm_rms_sum_nofifo_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Layernorm_rms_sum_nofifo_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Layernorm_rms_sum_nofifo_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

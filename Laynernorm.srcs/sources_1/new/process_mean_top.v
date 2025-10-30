@@ -121,6 +121,18 @@ wire [127:0] zero_mean_data;
 wire zero_mean_valid;
 wire zero_mean_ready;
 
+
+wire fifo_ready_bus [7:0]; 
+wire mean_ready_bus [7:0];
+wire zero_mean_valid_bus [7:0];
+
+assign fifo_ready = fifo_ready_bus[7]&fifo_ready_bus[6]&fifo_ready_bus[5]&fifo_ready_bus[4]&
+                     fifo_ready_bus[3]&fifo_ready_bus[2]&fifo_ready_bus[1]&fifo_ready_bus[0];
+assign mean_ready = mean_ready_bus[7]&mean_ready_bus[6]&mean_ready_bus[5]&mean_ready_bus[4]&
+                     mean_ready_bus[3]&mean_ready_bus[2]&mean_ready_bus[1]&mean_ready_bus[0];
+assign zero_mean_valid = zero_mean_valid_bus[7]&zero_mean_valid_bus[6]&zero_mean_valid_bus[5]&zero_mean_valid_bus[4]&
+                          zero_mean_valid_bus[3]&zero_mean_valid_bus[2]&zero_mean_valid_bus[1]&zero_mean_valid_bus[0];
+
 genvar i;
     generate
         for (i=0; i<8; i=i+1) begin : sub_mean
@@ -128,12 +140,12 @@ genvar i;
                 .aclk(aclk),
                 .aresetn(arstn),
                 .s_axis_a_tvalid(fifo_valid),
-                .s_axis_a_tready(fifo_ready),
+                .s_axis_a_tready(fifo_ready_bus[i]),
                 .s_axis_a_tdata(fifo_out[16*i +: 16]),
                 .s_axis_b_tvalid(mean_valid),
-                .s_axis_b_tready(mean_ready),
+                .s_axis_b_tready(mean_ready_bus[i]),
                 .s_axis_b_tdata(mean_data),
-                .m_axis_result_tvalid(zero_mean_valid),
+                .m_axis_result_tvalid(zero_mean_valid_bus[i]),
                 .m_axis_result_tready(zero_mean_ready),
                 .m_axis_result_tdata(zero_mean_data[16*i +: 16])
             );

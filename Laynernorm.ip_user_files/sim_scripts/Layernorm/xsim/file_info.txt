@@ -3,6 +3,6 @@ Layernorm_cal_var_top_0_0.v,verilog,xil_defaultlib,../../../bd/Layernorm/ip/Laye
 Layernorm_accumulator_0_0.v,verilog,xil_defaultlib,../../../bd/Layernorm/ip/Layernorm_accumulator_0_0/sim/Layernorm_accumulator_0_0.v,
 Layernorm_axis_broadcaster_top_0_0.v,verilog,xil_defaultlib,../../../bd/Layernorm/ip/Layernorm_axis_broadcaster_top_0_0/sim/Layernorm_axis_broadcaster_top_0_0.v,
 Layernorm_rms_norm_top_0_0.v,verilog,xil_defaultlib,../../../bd/Layernorm/ip/Layernorm_rms_norm_top_0_0/sim/Layernorm_rms_norm_top_0_0.v,
-Layernorm.v,verilog,xil_defaultlib,../../../bd/Layernorm/sim/Layernorm.v,
 Layernorm_rms_sum_nofifo_0_0.v,verilog,xil_defaultlib,../../../bd/Layernorm/ip/Layernorm_rms_sum_nofifo_0_0/sim/Layernorm_rms_sum_nofifo_0_0.v,
+Layernorm.v,verilog,xil_defaultlib,../../../bd/Layernorm/sim/Layernorm.v,
 glbl.v,Verilog,xil_defaultlib,glbl.v

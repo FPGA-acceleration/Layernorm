@@ -66,10 +66,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernor
 INFO: [VRFC 10-311] analyzing module Layernorm_axis_broadcaster_top_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_rms_norm_top_0_0/sim/Layernorm_rms_norm_top_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Layernorm_rms_norm_top_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/sim/Layernorm.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Layernorm
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_rms_sum_nofifo_0_0/sim/Layernorm_rms_sum_nofifo_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Layernorm_rms_sum_nofifo_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/sim/Layernorm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/hdl/Layernorm_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Layernorm_wrapper
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/Layer_matrix_tb.v" into library xil_defaultlib

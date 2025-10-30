@@ -1,0 +1,695 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Oct 30 20:34:09 2025
+# Process ID         : 29961
+# Current directory  : /home/alhua/VivadoProject/Laynernorm
+# Command line       : vivado
+# Log file           : /home/alhua/VivadoProject/Laynernorm/vivado.log
+# Journal file       : /home/alhua/VivadoProject/Laynernorm/vivado.jou
+# Running On         : Hua
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 528.067 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16476 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 16476 MB
+# Available Virtual  : 9984 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/alhua/VivadoProject/RMSnorm/RMSnorm.xpr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Runs 36-271] Incremental checkpoint part, xc7z010iclg225-1L, does not match run part, xck26-sfvc784-2LV-c.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alhua/vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project /home/alhua/VivadoProject/Laynernorm/Laynernorm.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alhua/vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'genvar' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v:131]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'genvar' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v:131]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'genvar' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v:131]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'genvar' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v:131]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  Layernorm_process_mean_top_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+Reading block design file </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd>...
+Adding component instance block -- xilinx.com:module_ref:process_mean_top:1.0 - process_mean_top_0
+Adding component instance block -- xilinx.com:module_ref:cal_var_top:1.0 - cal_var_top_0
+Adding component instance block -- xilinx.com:module_ref:accumulator:1.0 - accumulator_0
+Adding component instance block -- xilinx.com:module_ref:axis_broadcaster_top:1.0 - axis_broadcaster_top_0
+Adding component instance block -- xilinx.com:module_ref:rms_norm_top:1.0 - rms_norm_top_0
+Adding component instance block -- xilinx.com:module_ref:rms_sum_nofifo:1.0 - rms_sum_nofifo_0
+Successfully read diagram <Layernorm> from block design file </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd>
+Upgrading '/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd'
+INFO: [IP_Flow 19-3420] Updated Layernorm_process_mean_top_0_0 to use current project options
+Wrote  : </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd> 
+Wrote  : </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/ui/bd_bf455ad.ui> 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  Layernorm_process_mean_top_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+Upgrading '/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd'
+INFO: [IP_Flow 19-3420] Updated Layernorm_process_mean_top_0_0 to use current project options
+Wrote  : </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd> 
+Wrote  : </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/ui/bd_bf455ad.ui> 
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_sub/bf_sub.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_sub/bf_sub.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_sub'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_mul/bf_mul.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_mul/bf_mul.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_mul'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/align_mul/align_mul.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/align_mul/align_mul.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'align_mul'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/align_mul/align_mul.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/align_mul/align_mul.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'align_mul'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_sub/bf_sub.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_sub/bf_sub.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_sub'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/c_shift_ram_2/c_shift_ram_2.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/c_shift_ram_2/c_shift_ram_2.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'c_shift_ram_2'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/c_shift_ram_1/c_shift_ram_1.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/c_shift_ram_1/c_shift_ram_1.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'c_shift_ram_1'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_2/floating_point_2.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_2/floating_point_2.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'floating_point_2'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'floating_point_1'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/axis_broadcaster_0/axis_broadcaster_0.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/axis_broadcaster_0/axis_broadcaster_0.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'axis_broadcaster_0'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_mul/bf_mul.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_mul/bf_mul.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_mul'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_sub/bf_sub.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_sub/bf_sub.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_sub'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_add/bf_add.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_add/bf_add.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_add'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/rms_sqrt_top/c_shift_ram_3/c_shift_ram_3.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/rms_sqrt_top/c_shift_ram_3/c_shift_ram_3.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'c_shift_ram_3'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_mul/bf_mul.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/bf_mul/bf_mul.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'bf_mul'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_2/floating_point_2.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_2/floating_point_2.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'floating_point_2'. Target already exists and is up to date.
+INFO: [Vivado 12-5457] ref source:/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'floating_point_1'. Target already exists and is up to date.
+generate_target Simulation [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd]
+Wrote  : </home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd> 
+Verilog Output written to : /home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/synth/Layernorm.v
+Verilog Output written to : /home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/sim/Layernorm.v
+Verilog Output written to : /home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/hdl/Layernorm_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block process_mean_top_0 .
+Exporting to file /home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/hw_handoff/Layernorm.hwh
+Generated Hardware Definition File /home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/synth/Layernorm.hwdef
+export_ip_user_files -of_objects [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/bd/Layernorm/Layernorm.bd] -directory /home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/sim_scripts -ip_user_files_dir /home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files -ipstatic_source_dir /home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/alhua/VivadoProject/Laynernorm/Laynernorm.cache/compile_simlib/modelsim} {questa=/home/alhua/VivadoProject/Laynernorm/Laynernorm.cache/compile_simlib/questa} {xcelium=/home/alhua/VivadoProject/Laynernorm/Laynernorm.cache/compile_simlib/xcelium} {vcs=/home/alhua/VivadoProject/Laynernorm/Laynernorm.cache/compile_simlib/vcs} {riviera=/home/alhua/VivadoProject/Laynernorm/Laynernorm.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'matrix_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/alhua/vivado/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/alhua/vivado/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'matrix_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim/X_test_tensor_bf16.bin'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj matrix_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/MinimumSystem.gen/sources_1/ip/bf_sub/sim/bf_sub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bf_sub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/MinimumSystem.gen/sources_1/ip/bf_mul/sim/bf_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bf_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/align_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mean_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module process_mean_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/var_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module var_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/cal_var_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cal_var_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_2/sim/floating_point_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module floating_point_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/sim/floating_point_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module floating_point_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/acc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module acc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/acc_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module acc_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/add8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/gen_tlast.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_tlast
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accumulator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/tdata_axis_broadcaster_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tdata_axis_broadcaster_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/tuser_axis_broadcaster_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tuser_axis_broadcaster_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/top_axis_broadcaster_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_axis_broadcaster_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/sim/axis_broadcaster_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_broadcaster_0
+WARNING: [VRFC 10-8772] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/sim/axis_broadcaster_0.v:86]
+WARNING: [VRFC 10-8772] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/sim/axis_broadcaster_0.v:87]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/axis_broadcaster_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_broadcaster_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/RMSnorm.gen/sources_1/ip/bf_add/sim/bf_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bf_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/bf_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bf_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/rms_sqrt_top/inv_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/rms_sqrt_top/inv_sqrt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sqrt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/rms_sqrt_top/inv_sqrt_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sqrt_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/rms_sqrt_top/rms_norm_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rms_norm_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/parallel_squarev2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parallel_squarev2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/squaresum_acc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module squaresum_acc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/import/sum_keep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum_keep
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/rms_sum_nofifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rms_sum_nofifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_process_mean_top_0_0/sim/Layernorm_process_mean_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_process_mean_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_cal_var_top_0_0/sim/Layernorm_cal_var_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_cal_var_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_accumulator_0_0/sim/Layernorm_accumulator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_accumulator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_axis_broadcaster_top_0_0/sim/Layernorm_axis_broadcaster_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_axis_broadcaster_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_rms_norm_top_0_0/sim/Layernorm_rms_norm_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_rms_norm_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/ip/Layernorm_rms_sum_nofifo_0_0/sim/Layernorm_rms_sum_nofifo_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_rms_sum_nofifo_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.ip_user_files/bd/Layernorm/sim/Layernorm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/hdl/Layernorm_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layernorm_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/Layer_matrix_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_tb
+xvhdl --incr --relax -prj matrix_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_14 -L axi_utils_v2_0_10 -L xbip_pipe_v3_0_10 -L xbip_dsp48_wrapper_v3_0_6 -L mult_gen_v12_0_22 -L floating_point_v7_1_19 -L c_reg_fd_v12_0_10 -L c_shift_ram_v12_0_18 -L axis_infrastructure_v1_1_1 -L axis_broadcaster_v1_1_32 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot matrix_tb_behav xil_defaultlib.matrix_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/alhua/vivado/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_14 -L axi_utils_v2_0_10 -L xbip_pipe_v3_0_10 -L xbip_dsp48_wrapper_v3_0_6 -L mult_gen_v12_0_22 -L floating_point_v7_1_19 -L c_reg_fd_v12_0_10 -L c_shift_ram_v12_0_18 -L axis_infrastructure_v1_1_1 -L axis_broadcaster_v1_1_32 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot matrix_tb_behav xil_defaultlib.matrix_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9543] actual bit length 129 differs from formal bit length 128 for port 'S_AXIS_TDATA' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/process_mean_top.v:86]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_viv_comp
+Compiling package c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_pkg
+Compiling package c_reg_fd_v12_0_10.c_reg_fd_v12_0_10_viv_comp
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_viv_comp
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_exp_table...
+Compiling package mult_gen_v12_0_22.mult_gen_v12_0_22_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_pkg
+Compiling package floating_point_v7_1_19.flt_utils
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package mult_gen_v12_0_22.dsp_pkg
+Compiling package axi_utils_v2_0_10.global_util_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_comps
+Compiling architecture struct of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_legacy [\c_shift_ram_v12_0_18_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_viv [\c_shift_ram_v12_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18 [\c_shift_ram_v12_0_18(c_xdevicef...]
+Compiling architecture c_shift_ram_1_arch of entity xil_defaultlib.c_shift_ram_1 [c_shift_ram_1_default]
+Compiling architecture xilinx of entity axi_utils_v2_0_10.axi_slave_2to1 [\axi_slave_2to1(c_a_tdata_width=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.zero_det_sel [\zero_det_sel(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=10,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=9,resul...]
+Compiling architecture rtl of entity floating_point_v7_1_19.alignment [\alignment(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(fast_input=true)\]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=5)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=6,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=5,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=6,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub_logic [\addsub_logic(c_xdevicefamily="z...]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub [\addsub(c_xdevicefamily="zynq",c...]
+Compiling architecture rtl of entity floating_point_v7_1_19.align_add [\align_add(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="zynq",wid...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="zynq",wid...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=11,resu...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [delay_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare [\compare(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_exp [\flt_add_exp(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=16,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.floating_point_1
+Compiling module xil_defaultlib.add8_default
+Compiling module xil_defaultlib.gen_tlast
+Compiling architecture xilinx of entity axi_utils_v2_0_10.axi_slave_2to1 [\axi_slave_2to1(c_a_tdata_width=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=29)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=7)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=2)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48,length=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=33,length=4)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48,length=6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48,length=3)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=3)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=7,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=4)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=27,fast_input=true...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=27)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=7,length=2)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(a_w=16,a_fw=8)(1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=10)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay_s [\delay_s(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=5,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=5,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=81)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=3)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=8,resul...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_accum_flt_to_fix [\flt_accum_flt_to_fix(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=20)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=7)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=7)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=144,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=144)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=144,res...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=4)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110000111100")(0...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,fast_input=true)\]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=16)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=5,length=2)\]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_accum [\flt_accum(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.floating_point_2
+Compiling module xil_defaultlib.acc
+Compiling architecture struct of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_legacy [\c_shift_ram_v12_0_18_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_viv [\c_shift_ram_v12_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18 [\c_shift_ram_v12_0_18(c_xdevicef...]
+Compiling architecture c_shift_ram_2_arch of entity xil_defaultlib.c_shift_ram_2 [c_shift_ram_2_default]
+Compiling module xil_defaultlib.acc_fifo
+Compiling module xil_defaultlib.accumulator
+Compiling module xil_defaultlib.Layernorm_accumulator_0_0
+Compiling module axis_infrastructure_v1_1_1.axis_infrastructure_v1_1_1_util_...
+Compiling module axis_infrastructure_v1_1_1.axis_infrastructure_v1_1_1_util_...
+Compiling module axis_broadcaster_v1_1_32.axis_broadcaster_v1_1_32_core(C_...
+Compiling module xil_defaultlib.tdata_axis_broadcaster_0(C_S_AXI...
+Compiling module xil_defaultlib.tuser_axis_broadcaster_0(C_S_AXI...
+Compiling module xil_defaultlib.top_axis_broadcaster_0(C_FAMILY=...
+Compiling module xil_defaultlib.axis_broadcaster_0
+Compiling module xil_defaultlib.axis_broadcaster_top
+Compiling module xil_defaultlib.Layernorm_axis_broadcaster_top_0...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,fast_input=true)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.zero_det_sel [\zero_det_sel(c_xdevicefamily="z...]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=9,resul...]
+Compiling architecture rtl of entity floating_point_v7_1_19.alignment [\alignment(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub_logic [\addsub_logic(c_xdevicefamily="z...]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub [\addsub(c_xdevicefamily="zynq",c...]
+Compiling architecture rtl of entity floating_point_v7_1_19.align_add [\align_add(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="zynq",wid...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="zynq",wid...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=11,resu...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare [\compare(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_exp [\flt_add_exp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.bf_sub
+Compiling architecture struct of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_legacy [\c_shift_ram_v12_0_18_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_viv [\c_shift_ram_v12_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18 [\c_shift_ram_v12_0_18(c_xdevicef...]
+Compiling architecture align_mul_arch of entity xil_defaultlib.align_mul [align_mul_default]
+Compiling module xil_defaultlib.var_fifo
+Compiling module xil_defaultlib.cal_var_top
+Compiling module xil_defaultlib.Layernorm_cal_var_top_0_0
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=10,fast_input=true)...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.op_resize [\op_resize(ai_width=8,bi_width=8...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_22.mult_gen_v12_0_22_viv [\mult_gen_v12_0_22_viv(c_verbosi...]
+Compiling architecture rtl of entity floating_point_v7_1_19.fix_mult_xx [\fix_mult_xx(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=3,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=3,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=14)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity axi_utils_v2_0_10.glb_srl_fifo [\glb_srl_fifo(width=16,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_10.glb_ifx_master [\glb_ifx_master(width=16,afull_t...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.bf_mul
+Compiling module xil_defaultlib.mean_fifo
+Compiling module xil_defaultlib.process_mean_top_default
+Compiling module xil_defaultlib.Layernorm_process_mean_top_0_0
+Compiling architecture struct of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_legacy [\c_shift_ram_v12_0_18_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18_viv [\c_shift_ram_v12_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_18.c_shift_ram_v12_0_18 [\c_shift_ram_v12_0_18(c_xdevicef...]
+Compiling architecture c_shift_ram_3_arch of entity xil_defaultlib.c_shift_ram_3 [c_shift_ram_3_default]
+Compiling module xil_defaultlib.inv_fifo
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.bf_add
+Compiling module xil_defaultlib.bf_fifo
+Compiling module xil_defaultlib.inv_sqrt
+Compiling module xil_defaultlib.inv_sqrt_top
+Compiling module xil_defaultlib.rms_norm_top_default
+Compiling module xil_defaultlib.Layernorm_rms_norm_top_0_0
+Compiling module xil_defaultlib.parallel_squarev2_default
+Compiling module xil_defaultlib.squaresum_acc
+Compiling module xil_defaultlib.sum_keep
+Compiling module xil_defaultlib.rms_sum_nofifo
+Compiling module xil_defaultlib.Layernorm_rms_sum_nofifo_0_0
+Compiling module xil_defaultlib.Layernorm
+Compiling module xil_defaultlib.Layernorm_wrapper
+Compiling module xil_defaultlib.matrix_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot matrix_tb_behav
+execute_script: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 8794.746 ; gain = 0.000 ; free physical = 1776 ; free virtual = 8304
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/alhua/VivadoProject/Laynernorm/Laynernorm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "matrix_tb_behav -key {Behavioral:sim_1:Functional:matrix_tb} -tclbatch {matrix_tb.tcl} -protoinst "protoinst_files/Layernorm.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/Layernorm.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//accumulator_0/M_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//accumulator_0/S_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//axis_broadcaster_top_0/M0_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//axis_broadcaster_top_0/M1_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//axis_broadcaster_top_0/S_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//cal_var_top_0/M_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//cal_var_top_0/S_AXIS_0
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//cal_var_top_0/S_AXIS_1
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//process_mean_top_0/M_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//process_mean_top_0/S_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//rms_norm_top_0/M_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//rms_norm_top_0/S_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//rms_sum_nofifo_0/M_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /matrix_tb/wrapper_u/Layernorm_i//rms_sum_nofifo_0/S_AXIS
+Time resolution is 1 ps
+source matrix_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/matrix_tb/bf16_memory" to the wave window because it has 786432 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+      98304 byte data has been loaded
+result file has been opened
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'matrix_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 8794.746 ; gain = 0.000 ; free physical = 1667 ; free virtual = 8215
+run 1000 ns
+run 1000 ns
+run 1000 ns
+Now in batch           0
+report_ip_status -name ip_status 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 20:41:50 2025...

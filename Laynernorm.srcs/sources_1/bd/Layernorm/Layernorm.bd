@@ -1417,23 +1417,23 @@
       "Net1": {
         "ports": [
           "aclk",
-          "process_mean_top_0/aclk",
           "accumulator_0/aclk",
           "cal_var_top_0/aclk",
           "axis_broadcaster_top_0/aclk",
           "rms_norm_top_0/aclk",
-          "rms_sum_nofifo_0/aclk"
+          "rms_sum_nofifo_0/aclk",
+          "process_mean_top_0/aclk"
         ]
       },
       "rst_clk_wiz_100M_peripheral_aresetn": {
         "ports": [
           "arstn",
           "accumulator_0/arstn",
-          "process_mean_top_0/arstn",
           "cal_var_top_0/arstn",
           "axis_broadcaster_top_0/aresetn",
           "rms_norm_top_0/arstn",
-          "rms_sum_nofifo_0/arstn"
+          "rms_sum_nofifo_0/arstn",
+          "process_mean_top_0/arstn"
         ]
       }
     }

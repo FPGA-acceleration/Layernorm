@@ -1,7 +1,7 @@
-Running: xsim.dir/matrix_tb_behav/xsimk -simmode gui -wdb matrix_tb_behav.wdb -simrunnum 0 -socket 49561
+Running: xsim.dir/matrix_tb_behav/xsimk -simmode gui -wdb matrix_tb_behav.wdb -simrunnum 0 -socket 37125
 Design successfully loaded
-Design Loading Memory Usage: 230852 KB (Peak: 231300 KB)
-Design Loading CPU Usage: 670 ms
+Design Loading Memory Usage: 230856 KB (Peak: 231304 KB)
+Design Loading CPU Usage: 660 ms
 Simulation completed
-Simulation Memory Usage: 321384 KB (Peak: 370120 KB)
-Simulation CPU Usage: 830 ms
+Simulation Memory Usage: 321392 KB (Peak: 370124 KB)
+Simulation CPU Usage: 900 ms
