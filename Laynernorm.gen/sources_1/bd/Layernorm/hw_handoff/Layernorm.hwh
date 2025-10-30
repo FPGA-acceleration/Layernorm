@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 30 19:49:37 2025" VIVADOVERSION="2024.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010i" NAME="Layernorm" PACKAGE="clg225" SPEEDGRADE="-1L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="127" NAME="M_AXIS_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="rms_norm_top_0_M_AXIS_TDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rms_norm_top_0" PORT="M_AXIS_TDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M_AXIS_0_tready" SIGIS="undef" SIGNAME="rms_norm_top_0_M_AXIS_TREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rms_norm_top_0" PORT="M_AXIS_TREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M_AXIS_0_tvalid" SIGIS="undef" SIGNAME="rms_norm_top_0_M_AXIS_TVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rms_norm_top_0" PORT="M_AXIS_TVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="127" NAME="S_AXIS_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_S_AXIS_TDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="S_AXIS_TDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S_AXIS_0_tready" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_S_AXIS_TREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="S_AXIS_TREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_AXIS_0_tvalid" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_S_AXIS_TVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="S_AXIS_TVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="process_mean_top_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="accumulator_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="cal_var_top_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="rms_norm_top_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_arstn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="accumulator_0" PORT="arstn"/>
+        <CONNECTION INSTANCE="process_mean_top_0" PORT="arstn"/>
+        <CONNECTION INSTANCE="cal_var_top_0" PORT="arstn"/>
+        <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="aresetn"/>
+        <CONNECTION INSTANCE="rms_norm_top_0" PORT="arstn"/>
+        <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="arstn"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_S_AXIS_0" NAME="S_AXIS_0" TYPE="TARGET">
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+      <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+      <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+      <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+      <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+      <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_0_tdata"/>
+        <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_0_tready"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_0_tvalid"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="rms_norm_top_0_M_AXIS" NAME="M_AXIS_0" TYPE="INITIATOR">
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+      <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+      <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+      <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+      <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+      <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TDATA" PHYSICAL="M_AXIS_0_tdata"/>
+        <PORTMAP LOGICAL="TREADY" PHYSICAL="M_AXIS_0_tready"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="M_AXIS_0_tvalid"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/accumulator_0" HWVERSION="1.0" INSTANCE="accumulator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="accumulator" VLNV="xilinx.com:module_ref:accumulator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Layernorm_accumulator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="143" NAME="M_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="accumulator_0_M_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="process_mean_top_0" PORT="S_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M_AXIS_TREADY" SIGIS="undef" SIGNAME="accumulator_0_M_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="process_mean_top_0" PORT="S_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M_AXIS_TVALID" SIGIS="undef" SIGNAME="accumulator_0_M_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="process_mean_top_0" PORT="S_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="S_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="accumulator_0_S_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="M0_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_TREADY" SIGIS="undef" SIGNAME="accumulator_0_S_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="M0_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_TVALID" SIGIS="undef" SIGNAME="accumulator_0_S_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="M0_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_arstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="arstn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="accumulator_0_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="18"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axis_broadcaster_top_0_M0_AXIS" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/axis_broadcaster_top_0" HWVERSION="1.0" INSTANCE="axis_broadcaster_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_broadcaster_top" VLNV="xilinx.com:module_ref:axis_broadcaster_top:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Layernorm_axis_broadcaster_top_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="127" NAME="M0_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="accumulator_0_S_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accumulator_0" PORT="S_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M0_AXIS_TREADY" SIGIS="undef" SIGNAME="accumulator_0_S_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accumulator_0" PORT="S_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M0_AXIS_TVALID" SIGIS="undef" SIGNAME="accumulator_0_S_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accumulator_0" PORT="S_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="M1_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_M1_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="S_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M1_AXIS_TREADY" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_M1_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="S_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M1_AXIS_TVALID" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_M1_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="S_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="S_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_S_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Layernorm_imp" PORT="S_AXIS_0_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_TREADY" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_S_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Layernorm_imp" PORT="S_AXIS_0_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_TVALID" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_S_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Layernorm_imp" PORT="S_AXIS_0_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_arstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="arstn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="axis_broadcaster_top_0_M0_AXIS" NAME="M0_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M0_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M0_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M0_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axis_broadcaster_top_0_M1_AXIS" NAME="M1_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M1_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M1_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M1_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="External_Interface_S_AXIS_0" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/cal_var_top_0" HWVERSION="1.0" INSTANCE="cal_var_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cal_var_top" VLNV="xilinx.com:module_ref:cal_var_top:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Layernorm_cal_var_top_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="143" NAME="M_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="cal_var_top_0_M_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_norm_top_0" PORT="S_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M_AXIS_TREADY" SIGIS="undef" SIGNAME="cal_var_top_0_M_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_norm_top_0" PORT="S_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M_AXIS_TVALID" SIGIS="undef" SIGNAME="cal_var_top_0_M_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_norm_top_0" PORT="S_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="S_AXIS_0_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_0_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="process_mean_top_0" PORT="M_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_0_TREADY" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_0_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="process_mean_top_0" PORT="M_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_0_TVALID" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_0_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="process_mean_top_0" PORT="M_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="S_AXIS_1_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_1_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="M_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_1_TREADY" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_1_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="M_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_1_TVALID" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_1_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rms_sum_nofifo_0" PORT="M_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_arstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="arstn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="cal_var_top_0_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="18"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="process_mean_top_0_M_AXIS" NAME="S_AXIS_0" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="18"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_0_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_0_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_0_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="rms_sum_nofifo_0_M_AXIS" NAME="S_AXIS_1" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_1_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_1_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_1_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/process_mean_top_0" HWVERSION="1.0" INSTANCE="process_mean_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="process_mean_top" VLNV="xilinx.com:module_ref:process_mean_top:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Layernorm_process_mean_top_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="143" NAME="M_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_0_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="S_AXIS_0_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M_AXIS_TREADY" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_0_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="S_AXIS_0_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M_AXIS_TVALID" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_0_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="S_AXIS_0_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="S_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="accumulator_0_M_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accumulator_0" PORT="M_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_TREADY" SIGIS="undef" SIGNAME="accumulator_0_M_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accumulator_0" PORT="M_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_TVALID" SIGIS="undef" SIGNAME="accumulator_0_M_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="accumulator_0" PORT="M_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_arstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="arstn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="process_mean_top_0_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="18"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="accumulator_0_M_AXIS" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="18"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/rms_norm_top_0" HWVERSION="1.0" INSTANCE="rms_norm_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rms_norm_top" VLNV="xilinx.com:module_ref:rms_norm_top:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Layernorm_rms_norm_top_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="127" NAME="M_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="rms_norm_top_0_M_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Layernorm_imp" PORT="M_AXIS_0_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M_AXIS_TREADY" SIGIS="undef" SIGNAME="rms_norm_top_0_M_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Layernorm_imp" PORT="M_AXIS_0_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M_AXIS_TVALID" SIGIS="undef" SIGNAME="rms_norm_top_0_M_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Layernorm_imp" PORT="M_AXIS_0_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="S_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="cal_var_top_0_M_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="M_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_TREADY" SIGIS="undef" SIGNAME="cal_var_top_0_M_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="M_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_TVALID" SIGIS="undef" SIGNAME="cal_var_top_0_M_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="M_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_arstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="arstn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="rms_norm_top_0_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="cal_var_top_0_M_AXIS" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="18"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/rms_sum_nofifo_0" HWVERSION="1.0" INSTANCE="rms_sum_nofifo_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rms_sum_nofifo" VLNV="xilinx.com:module_ref:rms_sum_nofifo:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Layernorm_rms_sum_nofifo_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="M_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_1_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="S_AXIS_1_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M_AXIS_TREADY" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_1_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="S_AXIS_1_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M_AXIS_TVALID" SIGIS="undef" SIGNAME="cal_var_top_0_S_AXIS_1_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cal_var_top_0" PORT="S_AXIS_1_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="S_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_M1_AXIS_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="M1_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXIS_TREADY" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_M1_AXIS_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="M1_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXIS_TVALID" SIGIS="undef" SIGNAME="axis_broadcaster_top_0_M1_AXIS_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_broadcaster_top_0" PORT="M1_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="arstn" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_arstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="arstn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="rms_sum_nofifo_0_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="M_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="M_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="M_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axis_broadcaster_top_0_M1_AXIS" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Layernorm_aclk"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="S_AXIS_TDATA"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="S_AXIS_TREADY"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="S_AXIS_TVALID"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Laynernorm.gen/sources_1/ip/align_mul/sim/align_mul.vhd" \
-
-# Do not sort compile order
-nosort

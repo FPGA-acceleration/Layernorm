@@ -1,0 +1,291 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Oct 30 19:37:57 2025
+# Process ID         : 13405
+# Current directory  : /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1
+# Command line       : vivado -log Layernorm_accumulator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Layernorm_accumulator_0_0.tcl
+# Log file           : /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/Layernorm_accumulator_0_0.vds
+# Journal file       : /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/vivado.jou
+# Running On         : Hua
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 1104.398 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16476 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 16476 MB
+# Available Virtual  : 9832 MB
+#-----------------------------------------------------------
+source Layernorm_accumulator_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alhua/vivado/Vivado/2024.2/data/ip'.
+Command: synth_design -top Layernorm_accumulator_0_0 -part xc7z010iclg225-1L -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13692
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1928.191 ; gain = 418.828 ; free physical = 1109 ; free virtual = 6156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Layernorm_accumulator_0_0' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/ip/Layernorm_accumulator_0_0/synth/Layernorm_accumulator_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'accumulator' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/accumulator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'acc' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/acc.v:22]
+INFO: [Synth 8-6157] synthesizing module 'c_shift_ram_1' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/c_shift_ram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_shift_ram_1' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/c_shift_ram_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add8' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/add8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_1' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/floating_point_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_1' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/floating_point_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'add8' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/add8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gen_tlast' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/gen_tlast.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gen_tlast' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/gen_tlast.v:23]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_2' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/floating_point_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_2' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/floating_point_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'acc' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/acc.v:22]
+INFO: [Synth 8-6157] synthesizing module 'acc_fifo' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/acc_fifo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'c_shift_ram_2' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/c_shift_ram_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_shift_ram_2' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/.Xil/Vivado-13405-Hua/realtime/c_shift_ram_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'acc_fifo' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/acc_fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/sources_1/new/accumulator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Layernorm_accumulator_0_0' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/ip/Layernorm_accumulator_0_0/synth/Layernorm_accumulator_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2001.129 ; gain = 491.766 ; free physical = 853 ; free virtual = 5896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2018.941 ; gain = 509.578 ; free physical = 848 ; free virtual = 5891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2018.941 ; gain = 509.578 ; free physical = 848 ; free virtual = 5891
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2018.941 ; gain = 0.000 ; free physical = 856 ; free virtual = 5899
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/c_shift_ram_2/c_shift_ram_2/c_shift_ram_2_in_context.xdc] for cell 'inst/fifo_u/shift_ram_u'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/c_shift_ram_2/c_shift_ram_2/c_shift_ram_2_in_context.xdc] for cell 'inst/fifo_u/shift_ram_u'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/c_shift_ram_1/c_shift_ram_1/c_shift_ram_1_in_context.xdc] for cell 'inst/acc_u/shift_ram_u'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/c_shift_ram_1/c_shift_ram_1/c_shift_ram_1_in_context.xdc] for cell 'inst/acc_u/shift_ram_u'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_2/floating_point_2/floating_point_2_in_context.xdc] for cell 'inst/acc_u/acc_u'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_2/floating_point_2/floating_point_2_in_context.xdc] for cell 'inst/acc_u/acc_u'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[0].add_s1'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[0].add_s1'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[1].add_s1'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[1].add_s1'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[2].add_s1'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[2].add_s1'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[3].add_s1'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE1[3].add_s1'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE2[0].add_s2'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE2[0].add_s2'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE2[1].add_s2'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/STAGE2[1].add_s2'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/add_s3'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Activation_accelerator.gen/sources_1/ip/floating_point_1/floating_point_1/floating_point_1_in_context.xdc] for cell 'inst/acc_u/add8_u/add_s3'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/ip/Layernorm_accumulator_0_0/Layernorm_accumulator_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/bd/Layernorm/ip/Layernorm_accumulator_0_0/Layernorm_accumulator_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2143.680 ; gain = 0.000 ; free physical = 849 ; free virtual = 5891
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2143.680 ; gain = 0.000 ; free physical = 853 ; free virtual = 5895
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2143.680 ; gain = 634.316 ; free physical = 866 ; free virtual = 5990
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2151.684 ; gain = 642.320 ; free physical = 866 ; free virtual = 5990
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/fifo_u/shift_ram_u. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/shift_ram_u. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/acc_u. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/\STAGE1[0].add_s1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/\STAGE1[1].add_s1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/\STAGE1[2].add_s1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/\STAGE1[3].add_s1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/\STAGE2[0].add_s2 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/\STAGE2[1].add_s2 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/acc_u/add8_u/add_s3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2151.684 ; gain = 642.320 ; free physical = 869 ; free virtual = 5993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2151.684 ; gain = 642.320 ; free physical = 871 ; free virtual = 5996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2151.684 ; gain = 642.320 ; free physical = 934 ; free virtual = 5972
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2167.684 ; gain = 658.320 ; free physical = 689 ; free virtual = 5715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2196.730 ; gain = 687.367 ; free physical = 648 ; free virtual = 5674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2196.730 ; gain = 687.367 ; free physical = 647 ; free virtual = 5673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |c_shift_ram_1    |         1|
+|2     |floating_point_2 |         1|
+|3     |floating_point_1 |         7|
+|4     |c_shift_ram_2    |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |c_shift_ram      |     2|
+|3     |floating_point   |     1|
+|4     |floating_point_1 |     6|
+|10    |floating_point   |     1|
+|11    |LUT1             |     2|
+|12    |LUT2             |     3|
+|13    |LUT3             |     8|
+|14    |LUT4             |     3|
+|15    |LUT5             |     3|
+|16    |FDCE             |   130|
+|17    |FDPE             |     6|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.543 ; gain = 714.441 ; free physical = 637 ; free virtual = 5663
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.551 ; gain = 839.180 ; free physical = 637 ; free virtual = 5663
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2348.551 ; gain = 0.000 ; free physical = 805 ; free virtual = 5832
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2404.570 ; gain = 0.000 ; free physical = 747 ; free virtual = 5772
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7615ade
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 2404.570 ; gain = 962.879 ; free physical = 734 ; free virtual = 5759
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1459.701; main = 1410.113; forked = 208.770
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3121.523; main = 2404.574; forked = 924.789
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2428.582 ; gain = 0.000 ; free physical = 732 ; free virtual = 5757
+INFO: [Common 17-1381] The checkpoint '/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1/Layernorm_accumulator_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Layernorm_accumulator_0_0_utilization_synth.rpt -pb Layernorm_accumulator_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 19:38:14 2025...

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Layernorm_accumulator_0_0_synth_1" LaunchDir="/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_accumulator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Layernorm_axis_broadcaster_top_0_0_synth_1" LaunchDir="/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_axis_broadcaster_top_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Layernorm_cal_var_top_0_0_synth_1" LaunchDir="/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_cal_var_top_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Layernorm_process_mean_top_0_0_synth_1" LaunchDir="/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_process_mean_top_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Layernorm_rms_norm_top_0_0_synth_1" LaunchDir="/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_rms_norm_top_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Layernorm_rms_sum_topv2_0_0_synth_1" LaunchDir="/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/Layernorm_rms_sum_topv2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.ignorePathLengthChecks" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

@@ -21,7 +21,9 @@
 
 // Top module for processing mean calculation
 // input : 128-bit data (8 bf16 numbers), 16-bit sum
+// 输入{ 8*16'data , 16'sum }
 // output: 128-bit zero_mean_data (8 bf16 numbers), 16-bit mean square
+// 输出{ 8*16'(减去均值后的零均值数据)，16’（均值的平方）}
 
 module process_mean_top(
     input  wire        aclk,

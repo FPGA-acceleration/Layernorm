@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Laynernorm.gen/sources_1/ip/align_mul/sim/align_mul.vhd" \
+"../../../../Activation_accelerator.gen/sources_1/ip/c_shift_ram_2/sim/c_shift_ram_2.vhd" \
+"../../../../Activation_accelerator.gen/sources_1/ip/c_shift_ram_1/sim/c_shift_ram_1.vhd" \
+"../../../../Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/sim/c_shift_ram_3.vhd" \
+
+# Do not sort compile order
+nosort

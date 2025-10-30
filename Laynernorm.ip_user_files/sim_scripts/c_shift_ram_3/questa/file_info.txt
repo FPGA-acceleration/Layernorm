@@ -1,0 +1,7 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../vivado/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../vivado/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_14,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+c_reg_fd_v12_0_vh_rfs.vhd,vhdl,c_reg_fd_v12_0_10,../../../ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd,
+c_shift_ram_v12_0_vh_rfs.vhd,vhdl,c_shift_ram_v12_0_18,../../../ipstatic/hdl/c_shift_ram_v12_0_vh_rfs.vhd,
+c_shift_ram_3.vhd,vhdl,xil_defaultlib,../../../../Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/sim/c_shift_ram_3.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

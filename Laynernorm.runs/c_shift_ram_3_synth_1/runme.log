@@ -1,0 +1,254 @@
+
+*** Running vivado
+    with args -log c_shift_ram_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_shift_ram_3.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Oct 30 19:35:00 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source c_shift_ram_3.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: c_shift_ram_3
+Command: synth_design -top c_shift_ram_3 -part xc7z010iclg225-1L -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12177
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1902.875 ; gain = 419.828 ; free physical = 3668 ; free virtual = 8705
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_3' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/synth/c_shift_ram_3.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_WIDTH bound to: 128 - type: integer 
+	Parameter C_DEPTH bound to: 45 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHIFT_TYPE bound to: 0 - type: integer 
+	Parameter C_OPT_GOAL bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_SINIT_VAL bound to: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_DEFAULT_DATA bound to: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_HAS_A bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_REG_LAST_BIT bound to: 1 - type: integer 
+	Parameter C_SYNC_PRIORITY bound to: 1 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_18' declared at '/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2634' bound to instance 'U0' of component 'c_shift_ram_v12_0_18' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/synth/c_shift_ram_3.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_3' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/synth/c_shift_ram_3.vhd:68]
+WARNING: [Synth 8-7129] Port a[3] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2007.812 ; gain = 524.766 ; free physical = 3546 ; free virtual = 8585
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2025.625 ; gain = 542.578 ; free physical = 3546 ; free virtual = 8585
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2025.625 ; gain = 542.578 ; free physical = 3546 ; free virtual = 8585
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2025.625 ; gain = 0.000 ; free physical = 3546 ; free virtual = 8585
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/c_shift_ram_3_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/c_shift_ram_3_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/c_shift_ram_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/c_shift_ram_3_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2166.375 ; gain = 0.000 ; free physical = 3549 ; free virtual = 8583
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2166.375 ; gain = 0.000 ; free physical = 3549 ; free virtual = 8583
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2166.375 ; gain = 683.328 ; free physical = 3602 ; free virtual = 8633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2174.379 ; gain = 691.332 ; free physical = 3602 ; free virtual = 8633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/c_shift_ram_3_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2174.379 ; gain = 691.332 ; free physical = 3602 ; free virtual = 8633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2174.379 ; gain = 691.332 ; free physical = 3595 ; free virtual = 8626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port a[3] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2174.379 ; gain = 691.332 ; free physical = 3602 ; free virtual = 8634
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2174.379 ; gain = 691.332 ; free physical = 3517 ; free virtual = 8568
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2174.379 ; gain = 691.332 ; free physical = 3500 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2182.387 ; gain = 699.340 ; free physical = 3492 ; free virtual = 8551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |SRLC32E |   256|
+|2     |FDRE    |   256|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.199 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2331.199 ; gain = 707.402 ; free physical = 3380 ; free virtual = 8413
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2331.207 ; gain = 848.152 ; free physical = 3380 ; free virtual = 8413
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2331.207 ; gain = 0.000 ; free physical = 3573 ; free virtual = 8606
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2331.207 ; gain = 0.000 ; free physical = 3574 ; free virtual = 8607
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4d06bcf3
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2331.207 ; gain = 856.164 ; free physical = 3574 ; free virtual = 8607
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1600.486; main = 1530.100; forked = 268.935
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3099.172; main = 2331.203; forked = 924.789
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2355.211 ; gain = 0.000 ; free physical = 3574 ; free virtual = 8607
+INFO: [Common 17-1381] The checkpoint '/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/c_shift_ram_3_synth_1/c_shift_ram_3.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP c_shift_ram_3, cache-ID = 499662aaa32b08c3
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2411.238 ; gain = 0.000 ; free physical = 3591 ; free virtual = 8625
+INFO: [Common 17-1381] The checkpoint '/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/c_shift_ram_3_synth_1/c_shift_ram_3.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file c_shift_ram_3_utilization_synth.rpt -pb c_shift_ram_3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 19:35:17 2025...

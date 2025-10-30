@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../Laynernorm.srcs/MinimumSystem.gen/sources_1/ip/c_shift_ram_3/sim/c_shift_ram_3.vhd" \
+
+# Do not sort compile order
+nosort

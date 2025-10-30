@@ -1,0 +1,344 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Oct 30 19:15:59 2025
+# Process ID         : 6197
+# Current directory  : /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1
+# Command line       : vivado -log axis_broadcaster_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_broadcaster_0.tcl
+# Log file           : /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/axis_broadcaster_0.vds
+# Journal file       : /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/vivado.jou
+# Running On         : Hua
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 400.000 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16476 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 16476 MB
+# Available Virtual  : 13242 MB
+#-----------------------------------------------------------
+source axis_broadcaster_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axis_broadcaster_0
+Command: synth_design -top axis_broadcaster_0 -part xc7z010iclg225-1L -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1904.332 ; gain = 417.828 ; free physical = 8028 ; free virtual = 11569
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/synth/axis_broadcaster_0.v:87]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/synth/axis_broadcaster_0.v:88]
+INFO: [Synth 8-6157] synthesizing module 'axis_broadcaster_0' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/synth/axis_broadcaster_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_axis_broadcaster_0' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/top_axis_broadcaster_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axis_broadcaster_v1_1_32_core' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/axis_broadcaster_v1_1_vl_rfs.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_axis2vector' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:805]
+INFO: [Synth 8-6155] done synthesizing module 'axis_broadcaster_v1_1_32_core' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/axis_broadcaster_v1_1_vl_rfs.v:58]
+INFO: [Synth 8-6157] synthesizing module 'tdata_axis_broadcaster_0' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/tdata_axis_broadcaster_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdata_axis_broadcaster_0' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/tdata_axis_broadcaster_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tuser_axis_broadcaster_0' [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/tuser_axis_broadcaster_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'tuser_axis_broadcaster_0' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/tuser_axis_broadcaster_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'top_axis_broadcaster_0' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/hdl/top_axis_broadcaster_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axis_broadcaster_0' (0#1) [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/synth/axis_broadcaster_0.v:53]
+WARNING: [Synth 8-7129] Port tuser[1] in module tuser_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tuser[0] in module tuser_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[255] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[254] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[253] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[252] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[251] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[250] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[249] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[248] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[247] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[246] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[245] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[244] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[243] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[242] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[241] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[240] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[239] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[238] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[237] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[236] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[235] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[234] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[233] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[232] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[231] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[230] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[229] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[228] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[227] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[226] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[225] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[224] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[223] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[222] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[221] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[220] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[219] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[218] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[217] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[216] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[215] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[214] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[213] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[212] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[211] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[210] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[209] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[208] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[207] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[206] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[205] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[204] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[203] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[202] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[201] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[200] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[199] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[198] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[197] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[196] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[195] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[194] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[193] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[192] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[191] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[190] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[189] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[188] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[187] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[186] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[185] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[184] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[183] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[182] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[181] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[180] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[179] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[178] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[177] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[176] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[175] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[174] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[173] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[172] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[171] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[170] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[169] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[168] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[167] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[166] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[165] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[164] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[163] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[162] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[161] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[160] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[159] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tdata[158] in module tdata_axis_broadcaster_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1978.301 ; gain = 491.797 ; free physical = 7934 ; free virtual = 11476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1996.113 ; gain = 509.609 ; free physical = 7935 ; free virtual = 11477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1996.113 ; gain = 509.609 ; free physical = 7935 ; free virtual = 11477
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1996.113 ; gain = 0.000 ; free physical = 7935 ; free virtual = 11477
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/axis_broadcaster_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.gen/sources_1/ip/axis_broadcaster_0/axis_broadcaster_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2118.863 ; gain = 0.000 ; free physical = 7943 ; free virtual = 11485
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2118.863 ; gain = 0.000 ; free physical = 7943 ; free virtual = 11485
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2118.863 ; gain = 632.359 ; free physical = 7990 ; free virtual = 11501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.867 ; gain = 640.363 ; free physical = 7990 ; free virtual = 11501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.867 ; gain = 640.363 ; free physical = 7990 ; free virtual = 11501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.867 ; gain = 640.363 ; free physical = 7996 ; free virtual = 11508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/broadcaster_core/MI_SLOT[0].util_vector2axis' (axis_infrastructure_v1_1_1_util_vector2axis) to 'inst/broadcaster_core/MI_SLOT[1].util_vector2axis'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.867 ; gain = 640.363 ; free physical = 7996 ; free virtual = 11509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2167.867 ; gain = 681.363 ; free physical = 7906 ; free virtual = 11419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2176.883 ; gain = 690.379 ; free physical = 7899 ; free virtual = 11411
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2177.891 ; gain = 691.387 ; free physical = 7899 ; free virtual = 11411
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     2|
+|2     |LUT5 |     1|
+|3     |LUT6 |     2|
+|4     |FDRE |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.703 ; gain = 735.449 ; free physical = 7759 ; free virtual = 11271
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2344.711 ; gain = 858.199 ; free physical = 7759 ; free virtual = 11271
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2344.711 ; gain = 0.000 ; free physical = 7759 ; free virtual = 11271
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2400.730 ; gain = 0.000 ; free physical = 7936 ; free virtual = 11441
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 617b540a
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2400.730 ; gain = 956.887 ; free physical = 7936 ; free virtual = 11441
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1745.248; main = 1554.868; forked = 269.132
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3217.684; main = 2400.734; forked = 924.789
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2424.742 ; gain = 0.000 ; free physical = 7936 ; free virtual = 11441
+INFO: [Common 17-1381] The checkpoint '/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/axis_broadcaster_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axis_broadcaster_0, cache-ID = a43146d4a8054570
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2424.742 ; gain = 0.000 ; free physical = 7904 ; free virtual = 11410
+INFO: [Common 17-1381] The checkpoint '/home/alhua/VivadoProject/Laynernorm/Laynernorm.runs/axis_broadcaster_0_synth_1/axis_broadcaster_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file axis_broadcaster_0_utilization_synth.rpt -pb axis_broadcaster_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 19:16:14 2025...
